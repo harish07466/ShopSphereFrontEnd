@@ -41,7 +41,7 @@ A modern, Fully Responsive E-Commerce Frontend built using **React**, featuring 
 
 ```bash
 # Clone Repo
-git clone [<your-frontend-repo-url>](https://github.com/harish07466/ShopSphereFrontEnd.git)
+git clone (https://github.com/harish07466/ShopSphereFrontEnd.git)
 
 cd <project-folder>
 
