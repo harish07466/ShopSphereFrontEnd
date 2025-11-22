@@ -1,0 +1,235 @@
+/* ===== Orders Page Styling (Dark Modern Theme Like Product Page) ===== */
+
+.orders-page {
+  min-height: 100vh;
+  background: #0d1b24; /* deep bluish dark background */
+  color: #e9f0f3;
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ---------- Header ---------- */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.orders-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e6f3ff;
+}
+
+/* ---------- Close Button ---------- */
+.back-btn {
+  background: #1e2b34;
+  border: 1px solid #324856;
+  border-radius: 8px;
+  color: #ea3535;
+  font-weight: 600;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #263b46;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+}
+
+/* ---------- States ---------- */
+.orders-loading,
+.orders-error,
+.no-orders {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #c4d5dd;
+  margin-top: 50px;
+}
+
+/* ---------- Orders Grid ---------- */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* ---------- Individual Order Card ---------- */
+.order-card {
+  background: #14232e;
+  border-radius: 15px;
+  padding: 16px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #213742;
+}
+
+.order-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(0, 188, 212, 0.25);
+}
+
+/* ---------- Image Styling ---------- */
+.order-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #1c2f39;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* ---------- Texts ---------- */
+.order-details h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.order-details p {
+  margin: 3px 0;
+  color: #bcd0db;
+  font-size: 0.9rem;
+}
+
+.order-id {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #7a95a5;
+}
+
+/* ---------- Popup Card (Expanded View) ---------- */
+.order-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 14, 19, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup content */
+.order-popup-content {
+  background: #15242e;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 90%;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.25);
+  animation: popupZoom 0.35s ease-out;
+  transform-origin: center;
+  position: relative;
+  border: 1px solid #1f3b46;
+}
+
+.order-popup-content img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #1b303d;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.order-popup-content h2 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.order-popup-content p {
+  color: #c8dbe4;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* ---------- Close Popup Button ---------- */
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00bcd4;
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close-popup:hover {
+  background: #f50606;
+  transform: rotate(90deg);
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupZoom {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ---------- Truncate Text ---------- */
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  .orders-page {
+    padding: 20px;
+  }
+
+  .orders-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .order-card {
+    width: 100%;
+  }
+
+  .order-popup-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .order-popup-content img {
+    height: 220px;
+  }
+}
