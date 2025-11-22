@@ -41,7 +41,7 @@ A modern, fully responsive e-commerce frontend built using **React**, featuring 
 
 ```bash
 # Clone Repo
-git clone <your-frontend-repo-url>
+git clone [<your-frontend-repo-url>](https://github.com/harish07466/ShopSphereFrontEnd.git)
 
 cd <project-folder>
 
@@ -69,6 +69,8 @@ REACT_APP_RAZORPAY_KEY=rzp_test_xxxxx
 ---
 
 # 📸 Screenshots
+
+**Note**: Click on the headings to reveal the Images.
 
 <details>
 <summary><h2>🟧 Register Page</h2></summary>
