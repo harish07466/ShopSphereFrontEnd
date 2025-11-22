@@ -170,6 +170,7 @@ MIT License © 2025 ShopSphere
 # 📬 Contact
 
 **Harish Kumbar**
-GitHub: [https://github.com/harish07466](https://github.com/harish07466)
+GitHub: https://github.com/harish07466
+
 
 ---
