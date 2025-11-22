@@ -1,6 +1,6 @@
 # 🛍️ ShopSphere – Frontend (React)
 
-A modern, Fully Responsive E-Commerce Frontend built using **React**, featuring both **Customer** and **Admin** dashboards, Razorpay payments, product management, user management, business reports, and a polished dark UI theme.
+A Modern, Fully Responsive E-Commerce Frontend built using **React**, featuring both **Customer** and **Admin** dashboards, Razorpay payments, product management, user management, business reports, and a polished dark UI theme.
 
 ---
 
